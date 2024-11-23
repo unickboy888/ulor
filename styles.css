@@ -1,0 +1,78 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #19191a;
+    color:#0b4eb3;
+}
+/* Heading style */
+h1 {
+    text-align: center;
+    color: #fcf403;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Links styling */
+a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #f00ee4;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #03fc13;
+}
+
+/* Links group styling */
+a + a {
+    margin-left: 10px;
+}
+
+/* Vertical spacing between sections */
+p + p {
+    margin-top: 5px;
+}
+
+a + p {
+    margin-top: 15px;
+}
+
+/* Adding a container for better spacing */
+body > a,
+body > p {
+    margin-left: 20px;
+}
+
+/* Style for grouped sections */
+a[href^="https://"]:before {
+    content: "🔗 ";
+    font-size: 0.9em;
+    color: #03fc35;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
